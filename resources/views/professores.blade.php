@@ -2,7 +2,7 @@
 
 @section('conteudo')
 
-@foreach ($alunos as $aluno)
+@foreach ($professores as $professor)
 <table class="table">
         <thead>
           <tr>
@@ -10,19 +10,19 @@
             <th scope="col">id: </th>
             <th scope="col">Nome: </th>
             <th scope="col">Idade:</th>
-            <th scope="col">Matricula</th>
+            <th scope="col">Materias</th>
             
           </tr>
         </thead>
         <tbody>
           <tr>
-          <th scope="row">{{$aluno->id}}</th>
-            <td>{{$aluno->name}}</td>
-            <td>{{$aluno->idade}}</td>
-            <td>{{$aluno->matricula}}</td>
+          <th scope="row">{{$professor->id}}</th>
+            <td>{{$professor->name}}</td>
+            <td>{{$professor->idade}}</td>
+            <td>{{$professor->materia}}</td>
             
             <td>
-            <a class='text-danger' href="/alunos/remove/{{$aluno->id}}"> Remover
+            <a class='text-danger' href="/professores/remove/{{$professor->id}}"> Remover
 
             </td>
             
