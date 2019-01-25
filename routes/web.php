@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('/alunos', 'EscolaController@lista');
+Route::get('/alunos/form', 'EscolaController@form');
+
+Route::post('/alunos/adiciona', 'EscolaController@adiciona');
+
+Route::get('/alunos/remove/{id}', 'EscolaController@remove');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
