@@ -28,3 +28,12 @@ Route::get('/professores/remove/{id}', 'ProfessorController@remove');
 
 
 
+Route::get('/turmas', 'TurmaController@lista');
+Route::get('/turmas/form', 'TurmaController@form');
+
+Route::post('/turmas/adiciona', 'TurmaController@adiciona');
+
+Route::get('/turmas/remove/{id}', 'TurmaController@remove');
+
+
+

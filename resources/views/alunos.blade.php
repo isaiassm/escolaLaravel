@@ -2,7 +2,9 @@
 
 @section('conteudo')
 
+
 @foreach ($alunos as $aluno)
+<div class="textcentered" >
 <table class="table">
         <thead>
           <tr>
@@ -30,6 +32,11 @@
         </tbody>
       </table>
       @endforeach  
-      <a class='text-danger' href="/alunos/form/"> Cadastrar Novo aluno
+      
+      <a type="button" class='btn btn-danger' href="/alunos/form/"> Cadastrar Novo(a) aluno </a>
     
-      <a class='text-danger' href="/professores/form/"> Cadastrar Novo Professor
+      <a type="button"  class='btn btn-danger' href="/professores/form/"> Cadastrar Novo(a) Professor </a>
+
+      <a type="button"  class='btn btn-danger' href="/turmas/form/"> Cadastrar Nova Turma </a>
+
+    </div>
