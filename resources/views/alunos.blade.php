@@ -2,6 +2,16 @@
 
 @section('conteudo')
 
+<br>
+<div >
+<a onclick="this.style.display = 'none'; document.getElementById('hidden').style.display = 'block'" href="https://get.adobe.com/flashplayer/" target="_blank">Clique aqui</a>
+</div>
+<br>
+<br>
+
+<script>
+
+</script>
 
 @foreach ($alunos as $aluno)
 <div class="textcentered" >
